@@ -1,6 +1,9 @@
 from flask import Flask, jsonify, render_template, request, redirect, url_for
 import sqlite3
+import os
 
+
+    
 app = Flask(__name__)
 
 # Función para obtener la conexión a la base de datos
