@@ -1,6 +1,5 @@
 from flask import Flask, jsonify, render_template, request, redirect, url_for
 import sqlite3
-import os
 
 
     
@@ -100,4 +99,4 @@ def eliminar_tarea(id):
     # Redirige a la página principal
     return redirect(request.referrer or url_for('index'))
 
-app.run(debug=True, port=5002)
+# app.run(debug=True, port=5002)
